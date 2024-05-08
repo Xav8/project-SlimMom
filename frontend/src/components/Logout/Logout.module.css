@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 300px;
+  gap: 20px;
+}
+.title {
+  font-weight: 700;
+  padding: 20px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-align: right;
+  color: #212121;
+  border-right: 2px solid #e0e0e0;
+}
+.button {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #9b9faa;
+  border: none;
+  background: transparent;
+}
+/* @media screen and (min-width: 600px) and (max-width: 1080px) {
+  .container {
+  }
+} */
+@media screen and (max-width: 599px) {
+  .container {
+    display: none;
+  }
+}

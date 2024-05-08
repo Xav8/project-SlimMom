@@ -1,0 +1,100 @@
+.formContainer {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.formDate {
+  font-weight: 700;
+  font-size: 34px;
+  color: #212121;
+  border: none;
+  margin: 50px 0px;
+}
+.addContainer {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.formField:nth-child(1n) {
+  outline: none;
+  padding-left: 21px;
+  width: 71px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #212121;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+.submitButton {
+  width: 48px;
+  height: 48px;
+  background-color: #fc842d;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.productsContainer {
+  width: 40%;
+  height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.productsList {
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.productsItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.button {
+  margin-right: 30px;
+  border: none;
+  background: transparent;
+  color: #9b9faa;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .productsContainer {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 699px) {
+  .formDate {
+    font-size: 18px;
+  }
+  .addContainer {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  .formContainer {
+    max-width: 350px;
+    margin: 0;
+  }
+  .productsContainer {
+    font-size: 14px;
+    width: 100%;
+  }
+  .productsItem {
+    gap: 20px;
+  }
+  .button {
+    margin-right: 5px;
+  }
+  .submitButton {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,1 @@
+# SlimMom Project for GoIT

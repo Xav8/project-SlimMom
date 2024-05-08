@@ -1,0 +1,95 @@
+.calculatorContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 170px;
+  margin-left: 20px;
+  width: 600px;
+}
+.calculatorContainer h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.4;
+  margin-bottom: 70px;
+}
+
+.formCalculator {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.calculatorContainer label {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #9b9faa;
+}
+
+.calculatorContainer input {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  border: none;
+  background: transparent;
+  color: #9b9faa;
+  outline: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.bloodTypeOptions {
+  display: flex;
+}
+.radioOption {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+}
+
+.calculatorButton {
+  justify-content: flex-end;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  width: 210px;
+  height: 20px;
+  box-shadow: 0 4px 10px 0 rgba(252, 132, 45, 0.5);
+  background: #fc842d;
+  padding: 22px 18px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 600px) and (max-width: 1080px) {
+  .calculatorContainer {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .calculatorContainer {
+    width: 85%;
+    margin-top: 50px;
+  }
+  .calculatorContainer h1 {
+    font-size: 23px;
+  }
+  .formCalculator label {
+    font-size: 18px;
+  }
+}
